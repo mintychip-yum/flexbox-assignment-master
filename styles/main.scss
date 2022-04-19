@@ -1,2 +1,52 @@
-@import 'partials/base';
+@import './partials/base';
+@import './vendor/normalize';
+@import './partials/mixins';
+
+
+nav {
+    @include bordered-box;
+    a {
+        padding: 10px;  
+    } 
+}
+
+div {
+    @include hero-centered;
+}
+
+.sidebar {
+    @include sidebar-color
+}
+
+@media (min-width:1024px){
+    .hero-content {
+       align-items:  center;
+    }
+}
+
+h1{
+    font-size: 4em;  
+}
+
+.main-container {
+    @include main-container;
+    .sidebar {
+        width: 56.25rem;
+    }
+    .post{
+        width: 56.25rem;
+    }
+}
+
+.mixed-layout{
+    @include mixed-layout;
+    .first{
+        width: 56.25rem;
+    }
+    .second{
+        flex-direction: column;
+        width: 56.25rem;
+    }
+  
+}
 

@@ -1,0 +1,34 @@
+@mixin bordered-box {
+    padding: 10px;
+    border: 1px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+@mixin hero-centered {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+@mixin sidebar-color {
+    background-color: white;
+}
+
+@mixin main-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+
+}
+
+@mixin mixed-layout {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+}
